@@ -1,0 +1,21 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore environment/config files (if you ever add them)
+.env
+*.env
+
+# Ignore log files
+*.log
+
+# Ignore backup files
+*.bak
+*.tmp
+
+# Ignore node modules (if you ever install packages later)
+node_modules/
+
+# Ignore build or dist folders (if you ever use a build tool later)
+dist/
+build/
