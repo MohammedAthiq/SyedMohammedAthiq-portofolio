@@ -146,12 +146,43 @@
         }
 
         .logo {
-            font-size: 1.5rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.65rem;
+            color: var(--text-primary);
+            font-size: 1.2rem;
             font-weight: 700;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            letter-spacing: 0.04em;
+            text-decoration: none;
+        }
+
+        .logo-mark {
+            display: grid;
+            width: 2.25rem;
+            height: 2.25rem;
+            place-items: center;
+            border: 1px solid rgba(0, 217, 255, 0.55);
+            border-radius: 0.65rem;
+            background: linear-gradient(135deg, rgba(0, 217, 255, 0.2), rgba(124, 58, 237, 0.25));
+            box-shadow: 0 5px 18px rgba(0, 217, 255, 0.16);
+            color: var(--primary);
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: -0.1em;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .logo-wordmark {
+            background: linear-gradient(135deg, #ffffff, var(--primary));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+        }
+
+        .logo:hover .logo-mark {
+            transform: translateY(-2px) rotate(-4deg);
+            box-shadow: 0 8px 22px rgba(0, 217, 255, 0.3);
         }
 
         .nav-links {
