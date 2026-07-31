@@ -41,7 +41,7 @@
         const typingText = document.querySelector('.typing-text');
         const texts = [
             'Programmer Analyst Trainee at Cognizant',
-            'CS Graduate',
+            'Computer Science Graduate',
             'Python Programmer',
             'Java Programmer',
             'AI & ML Enthusiast',
