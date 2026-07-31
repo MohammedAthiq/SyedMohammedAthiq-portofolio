@@ -40,7 +40,8 @@
         // ---------- Typing Effect ----------
         const typingText = document.querySelector('.typing-text');
         const texts = [
-            'Computer Science Student',
+            'Programmer Analyst Trainee at Cognizant',
+            'CS Graduate',
             'Python Programmer',
             'Java Programmer',
             'AI & ML Enthusiast',
