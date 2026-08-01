@@ -6,7 +6,7 @@ The site is fully responsive and deployed on **Netlify** for smooth and fast per
 ---
 
 ## 🚀 Live Demo
-👉 [Visit My Portfolio](https://syedmohammedathiq-portofolio.netlify.app/)
+👉 [Visit My Portfolio](https://syedmohammedathiq-portfolio.netlify.app/)
 
 ---
 

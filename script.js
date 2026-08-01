@@ -27,15 +27,19 @@
         // ---------- Mobile Menu Toggle ----------
         const menuToggle = document.getElementById('menuToggle');
         const navLinks = document.getElementById('navLinks');
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                const isActive = navLinks.classList.toggle('active');
+                menuToggle.setAttribute('aria-expanded', isActive ? 'true' : 'false');
             });
-        });
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
 
         // ---------- Typing Effect ----------
         const typingText = document.querySelector('.typing-text');
